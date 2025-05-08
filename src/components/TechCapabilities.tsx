@@ -51,13 +51,18 @@ const TechCapabilities = () => {
 
           <div className="relative">
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl">
-              <iframe
-                src="https://player.vimeo.com/video/1078775185/478151ecdc?h=478151ecdc&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&background=0&autoplay=1&loop=1&muted=0"
-                className="absolute w-full h-full object-cover"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                title="HAWKWRX Virtual Bird Table Demo"
-              ></iframe>
+              <div className="absolute inset-0 bg-hawk-dark-blue bg-opacity-50 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-hawk-accent-blue/20 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-hawk-accent-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <p className="text-white text-lg">Demo video</p>
+                  <p className="text-gray-400">Video will be displayed here in the live version</p>
+                </div>
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-hawk-accent-blue/10 rounded-full"></div>
             <div className="absolute -top-6 -left-6 w-20 h-20 bg-hawk-accent-blue/10 rounded-full"></div>
